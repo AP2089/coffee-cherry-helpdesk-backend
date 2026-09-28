@@ -160,10 +160,6 @@ export async function ensureConversation(
   }
 }
 
-export async function getMessages(sessionId: string): Promise<ChatMessageDTO[]> {
-  return loadMessages(sessionId)
-}
-
 export async function getMessagesPage(
   sessionId: string,
   options: { limit?: number; before?: string } = {},
